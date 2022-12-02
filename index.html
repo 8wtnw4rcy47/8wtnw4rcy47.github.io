@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        动态DOM编程起点和基础
+    </title>
+    <style type="text/css">
+        div {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+            color: white;
+            padding: 5px;
+            border: 10px solid white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <script type="text/javascript">
+        for (var i = 0; i < 100; i++) {
+            var divDom = document.createElement('div');
+            document.body.appendChild(divDom);
+            divDom.innerHTML = "绝代有佳人，\n幽居在空谷。\n自云良家子，\n零落依草木。";
+        }
+    </script>
+</body>
+
+</html>
